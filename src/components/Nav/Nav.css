@@ -1,0 +1,102 @@
+nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+     background-color: rgb(13, 16, 19);
+
+
+}
+
+.active {
+    color: rgb(56, 133, 143);
+    border-bottom: 2px solid rgb(179, 183, 189);
+}
+
+nav ul a {
+    cursor: pointer;
+}
+
+nav ul a:hover {
+    color: rgb(47, 156, 118);
+    border-bottom: 2px solid rgb(196, 210, 224);
+}
+
+ nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav h1 {
+    font-size: 30px;
+    background: linear-gradient(to right, rgb(66, 180, 205), white);
+
+    background-clip: text;
+    color: transparent;
+
+}
+.hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+    flex-direction: column;
+    display: none;
+    cursor: pointer;
+}
+.ham{
+   width:40px;
+   height:2px;
+   background-color: aliceblue;
+   transition: 0.5s;
+}
+.mobilemenu{
+    position: absolute;
+    width:100%;
+    top:80px;
+    height:100vh;
+    background-color:rgb(13, 16, 19);
+    backdrop-filter: blur(7px);
+    right:0;
+    transform: translateX(100%);
+    flex-direction: column;
+    transition: 0.5s;
+    gap:50px;
+
+}
+.activemobile{
+       transform: translateX(0%);
+}
+.activeham .ham:nth-child(1){
+ transform: rotate(45deg);
+ position: relative;
+ top: 8px;
+}
+.activeham .ham:nth-child(2){
+  opacity: 0;
+}
+.activeham .ham:nth-child(3){
+ transform: rotate(-45deg);
+ position: relative;
+ top: -12px;
+}
+@media (max-width:750px) {
+    .deskmenu{
+        display: none;
+
+    }
+    .hamburger{
+        display: flex;
+    }
+    
+}
