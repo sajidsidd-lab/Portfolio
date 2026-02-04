@@ -1,10 +1,10 @@
 import React from 'react'
 import Card from "../Card/Card"
 import "./Project.css"
-import va from "../../assets/va.png"
-import fw from "../../assets/fw.png"
-import br from "../../assets/br.png"
-import tti from "../../assets/tti.png"
+import desibite from "../../assets/desibite.png"
+import course from "../../assets/course.png"
+import wanderlust from "../../assets/wanderlust.png"
+import video from "../../assets/video.png"
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
@@ -49,10 +49,11 @@ function Projects() {
         <div id="projects">
             <h1 id="para">Decent Experienced in project</h1>
             <div className="slider">
-                <Card title=" VIRTUAL ASSISTANT" image={va}/>
-                <Card title="AI POWERED FITNESS WEBSITE" image={fw} />
-                <Card title="AI TEXT TO IMAGE" image={tti} />
-                <Card title="AI BACKGROUND REMOVER" image={br} />
+                <Card title=" WANDERLUST A HOTEL LISTING WEBSITE" image={wanderlust}/>
+                  <Card title="DESIBITE A FOOD DELIVERY WEBSITE" image={desibite} />
+                <Card title="COURSE RECOMMENDOR SYSTEM" image={course} />
+                <Card title="VIDEO CALL PLATFORM" image={video} />
+              
 
             </div>
         </div>
